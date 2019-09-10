@@ -48,35 +48,3 @@ bai = int(num //100)
 sum = ge + shi + bai
 print('各位数字之和：',sum)
 
-#水仙花数
-Number = input('请输入一个数字:')
-bai = int(Number[0])
-shi = int(Number[1])
-ge = int(Number[2])
-if bai **3 + shi **3 + ge **3 == int(Number):
-    print('是水仙花')
-else:
-    print('不是水仙花')
-#输入一个年份，判断是否是闰年
-year = int(input('请输入年份=>>'))
-if (year % 4 == 0 and year % 100 != 0 or year% 400==0):
-    print('%d 是闰年'%year)
-else:
-    print('%d 不是闰年'%year)
-#  MD5加密    
-import hashlib
-str = '666@qq.com'
-m = hashlib.md5()
-b = str.encode(encoding='utf-8')
-m.update(b)
-str_md5 = m.hexdigest()
-print('MD5加密前为 ：' + str)
-print('MD5加密后为 ：' + str_md5)
-#输入一个年份，判断是否是闰年
-year = int(input('请输入年份=>>'))
-if (year % 4 == 0 and year % 100 != 0 or year% 400==0):
-    print('%d 是闰年'%year)
-else:
-    print('%d 不是闰年'%year)
-
-

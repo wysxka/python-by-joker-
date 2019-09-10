@@ -1,127 +1,127 @@
 #01 解一元二次方程
-# import math
-# d = 0
-# def gen(a,b,c):
-#     d = b*b - 4 * a * c
-#     if d > 0 :
-#         r1 = (-b + math.sqrt(d)) / (2*a)
-#         r2 = (-b - math.sqrt(d)) / (2*a)
-#         print("该方程实根为 %f and %f"%(r1,r2))
-#     elif d == 0:
-#         r = -b / 2*a
-#         print("该方程实根为 %f"%r)
-#     else:
-#         print('该方程无实根')
-# def start():
-#     a,b,c = map(float,input('请输入a,b,c(用逗号分隔):').split(','))
-#     gen(a,b,c)
-# start()
+import math
+d = 0
+def gen(a,b,c):
+    d = b*b - 4 * a * c
+    if d > 0 :
+        r1 = (-b + math.sqrt(d)) / (2*a)
+        r2 = (-b - math.sqrt(d)) / (2*a)
+        print("该方程实根为 %f and %f"%(r1,r2))
+    elif d == 0:
+        r = -b / 2*a
+        print("该方程实根为 %f"%r)
+    else:
+        print('该方程无实根')
+def start():
+    a,b,c = map(float,input('请输入a,b,c(用逗号分隔):').split(','))
+    gen(a,b,c)
+start()
 
 
 #02 学习加法
-# import random
-# def Add(x):
-#     a = random.randint(0,100)
-#     b = random.randint(0,100)
-#     if x == a + b:
-#         print('True')
-#     else:
-#         print('False')
-# def Start():
-#     x = int(input('请输入两个随机数的和：'))
-#     Add(x)
-# Start()
+import random
+def Add(x):
+    a = random.randint(0,100)
+    b = random.randint(0,100)
+    if x == a + b:
+        print('True')
+    else:
+        print('False')
+def Start():
+    x = int(input('请输入两个随机数的和：'))
+    Add(x)
+Start()
 
 
 
 #03 未来数据
-# def week(day):    
-# 	    if day == 0:
-# 	        print('星期日')
-# 	    elif day == 1:
-# 	        print('星期一')
-# 	    elif day == 2:
-# 	        print('星期二')
-# 	    elif day == 3:
-# 	        print('星期三')
-# 	    elif day == 4:
-# 	        print('星期四')
-# 	    elif day == 5:
-# 	        print('星期五')
-# 	    elif day == 6:
-# 	        print('星期六')
+def week(day):    
+	    if day == 0:
+	        print('星期日')
+	    elif day == 1:
+	        print('星期一')
+	    elif day == 2:
+	        print('星期二')
+	    elif day == 3:
+	        print('星期三')
+	    elif day == 4:
+	        print('星期四')
+	    elif day == 5:
+	        print('星期五')
+	    elif day == 6:
+	        print('星期六')
 	        
-# 	def today(day,day_1):
-# 	    day_2 = day+day_1
-# 	    if day_2>=7:
-# 	        day_3 = (day_2)%7
-# 	        week(day_3)
-# 	    else:
-# 	        week(day_2)
+	def today(day,day_1):
+	    day_2 = day+day_1
+	    if day_2>=7:
+	        day_3 = (day_2)%7
+	        week(day_3)
+	    else:
+	        week(day_2)
 	    
-# 	def sart():
-# 	    day = eval(input('请输入今天是哪一天：'))
-# 	    day_1 = eval(input('输入到哪天的天数'))
-# 	    week(day)
-# 	    today(day,day_1)
-# 	sart()
+	def sart():
+	    day = eval(input('请输入今天是哪一天：'))
+	    day_1 = eval(input('输入到哪天的天数'))
+	    week(day)
+	    today(day,day_1)
+	sart()
 
 
 #04 排序
-# def count(a,b,c):
-# 	    num = [a,b,c]
-# 	    num.sort()
-# 	    print(num)
-# def start():
-# 	    a = int(input('输入第一个整数：'))
-# 	    b = int(input('输入第二个整数：'))
-# 	    c = int(input('输入第三个整数：'))
-# 	    count(a,b,c)
-# start()
+def count(a,b,c):
+	    num = [a,b,c]
+	    num.sort()
+	    print(num)
+def start():
+	    a = int(input('输入第一个整数：'))
+	    b = int(input('输入第二个整数：'))
+	    c = int(input('输入第三个整数：'))
+	    count(a,b,c)
+start()
 
 
 
 #05 比较价钱
 
-# def shop(weight1,weight2,price1,price2):
-# 	package1 = weight1 / price1
-# 	package2 = weight2 / price2
-# 	if package1 > package2:
-# 	    print('亲，我建议您买第一种哦')
-# 	else:
-# 	    print('亲，我建议您买第二种哦')	
-# def start():
-# 	weight1 = float(input('第一种重量是:')) 
-# 	price1 = float(input('第一种价格是:'))
-# 	weight2 = float(input('第二种重量是:'))
-# 	price2 = float(input('第二种价格是:'))
-# 	shop(weight1,weight2,price1,price2) 
-# start()  
+def shop(weight1,weight2,price1,price2):
+	package1 = weight1 / price1
+	package2 = weight2 / price2
+	if package1 > package2:
+	    print('亲，我建议您买第一种哦')
+	else:
+	    print('亲，我建议您买第二种哦')	
+def start():
+	weight1 = float(input('第一种重量是:')) 
+	price1 = float(input('第一种价格是:'))
+	weight2 = float(input('第二种重量是:'))
+	price2 = float(input('第二种价格是:'))
+	shop(weight1,weight2,price1,price2) 
+start()  
 
 
 #06 找天数
-# def start():
-# 	year,month = map(int,input('输入年和月(逗号分隔)：').split(','))
-# 	math(year,month)
+def start():
+	year,month = map(int,input('输入年和月(逗号分隔)：').split(','))
+	math(year,month)
 	
-# def math(year,month):
-#     list1 = [1,3,5,7,8,10,12]
-#     if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
-#         if month == 2:
-#             print('这个月有29天')
-#         elif month in list1:
-#             print('这个月有31天')
-#         else:
-#             print('这个月有30天')
-#     else:
-#         if month == 2:
-#             print('这个月有28天')
-#         elif month in list1:
-#             print('这个月有31天')
-#         else:
-#             print('这个月有30天')
+def math(year,month):
+    list1 = [1,3,5,7,8,10,12]
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+        if month == 2:
+            print('这个月有29天')
+        elif month in list1:
+            print('这个月有31天')
+        else:
+            print('这个月有30天')
+    else:
+        if month == 2:
+            print('这个月有28天')
+        elif month in list1:
+            print('这个月有31天')
+        else:
+            print('这个月有30天')
         
-# start()
+start()
 
 
 

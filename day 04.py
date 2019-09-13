@@ -80,14 +80,6 @@
 
 
 # 06 找出最小元素的下标
-#def indexOFSmallestElement(lst):
-#    lst1 = lst
-#    lst2 = sorted(lst)
-#    zuixiao = lst2[0]
-#    for i in range(len(lst1)):
-#        if lst1[i] == zuixiao:
-#            print('最小元素的下标再第几个呢，就是这里>>%d'%(i+1))           
-#indexOFSmallestElement([3,4,2,7,5,4,1,4,3,4])
 
 # 07 随机数字选择器
 
